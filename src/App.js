@@ -17,4 +17,3 @@ function App() {
 
 export default App;
 
-// before login that leads to landing page

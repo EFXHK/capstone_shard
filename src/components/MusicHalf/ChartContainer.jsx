@@ -1,15 +1,18 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Chart from "./Chart";
 import Titlebar from "./TitleBar";
+import { genres } from "../../data/musicGenres";
 
 
 // swap hard coded genres
-const ChartContainer = ({ genres }) => {
+const ChartContainer = () => {
     const [songs, setSongs] = useState([]);
 
+    const [musicGenres, setMusicGenres] = useState(genres);
+
     useEffect(() => {
-        loadSongs(genres[0].url)
-    }, [genres])
+        loadSongs(musicGenres[0].url)
+    }, [musicGenres])
 
     const loadSongs = url => {
         fetch(url)
@@ -26,11 +29,11 @@ const ChartContainer = ({ genres }) => {
         <>
             <Titlebar
                 handleSelectChange={handleSelectChange}
-                genres={genres}
+                musicGenres={musicGenres}
             />
             <Chart
                 songs={songs}
-                url={genres[0].url}
+                url={musicGenres[0].url}
                 handleSelectChange={handleSelectChange}
                 />
         </>
