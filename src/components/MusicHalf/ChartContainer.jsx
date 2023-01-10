@@ -3,7 +3,6 @@ import Chart from "./Chart";
 import Titlebar from "./TitleBar";
 
 
-
 // swap hard coded genres
 const ChartContainer = ({ genres }) => {
     const [songs, setSongs] = useState([]);
