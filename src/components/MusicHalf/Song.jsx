@@ -12,3 +12,10 @@ function Song({title, artist, position, image, audio}) {
     }
 }
 
+useEffect(() => {
+    //skip play on mount?
+    if (isPlaying === null) return
+    isPlaying ? audioSrc.current.play() : audioSrc.current.pause()
+}, [isPlaying])
+
+
