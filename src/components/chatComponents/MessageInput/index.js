@@ -1,6 +1,6 @@
 import React from 'react';
-import { useAuth } from '../../hooks/useAuth';
-import { sendMessage } from '../../services/firebase';
+import { useAuth } from '../../../hooks/useAuth';
+import { sendMessage } from '../../../services/firebase';
 import './styles.css';
 
 function MessageInput({ roomId }) {

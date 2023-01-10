@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import Chart from "./Chart";
-import Titlebar from "./TitleBar";
-import { genres } from "../../data/musicGenres";
+// import Chart from "../chatComponents/musicPlayer/Chart";
+import Chart from "../components/musicPlayerComponents/Chart";
+import Titlebar from "../components/musicPlayerComponents/TitleBar";
+import { genres } from "../data/musicGenres";
 
 
 // swap hard coded genres
@@ -26,7 +27,7 @@ const ChartContainer = () => {
     }
 
     return (
-        <>
+        <div>
             <Titlebar
                 handleSelectChange={handleSelectChange}
                 musicGenres={musicGenres}
@@ -36,7 +37,7 @@ const ChartContainer = () => {
                 url={musicGenres[0].url}
                 handleSelectChange={handleSelectChange}
                 />
-        </>
+        </div>
     )
 }
 

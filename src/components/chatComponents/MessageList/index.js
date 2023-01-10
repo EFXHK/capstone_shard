@@ -1,6 +1,6 @@
 import React from 'react';
-import { useAuth } from '../../hooks/useAuth';
-import { useMessages } from '../../hooks/useMessages';
+import { useAuth } from '../../../hooks/useAuth';
+import { useMessages } from '../../../hooks/useMessages';
 import './styles.css';
 
 function MessageList({ roomId }) {

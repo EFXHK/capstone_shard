@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Landing } from '../Landing';
-import { ChatRoom } from '../ChatRoom';
-import ChartContainer from '../MusicHalf/ChartContainer';
+import { Landing } from '../../components/chatComponents/Landing/index';
+// import { ChatRoom } from '../components/chatComponents/ChatRoom/index';
+import { ChatRoom } from '../../components/chatComponents/ChatRoom/index';
+import ChartContainer from '../../containers/ChartContainer';
 
 
 function AuthenticatedApp() {
@@ -9,10 +10,6 @@ function AuthenticatedApp() {
         <BrowserRouter>
         <div id="app-container">
             <ChartContainer/>
-
-            <div>
-                <h1>mplayer test</h1>
-            </div>
 
             <Routes>
                 <Route path="/" element={<Landing />} />
