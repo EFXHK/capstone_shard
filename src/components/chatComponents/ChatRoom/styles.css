@@ -1,5 +1,5 @@
 .messages-container {
-    width: 100%;
+    width: 225%;
     padding: 16px;
     flex-grow: 1;
     border: 1px solid var(--color-gray);

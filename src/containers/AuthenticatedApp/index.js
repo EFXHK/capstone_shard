@@ -3,6 +3,7 @@ import { Landing } from '../../components/chatComponents/Landing/index';
 // import { ChatRoom } from '../components/chatComponents/ChatRoom/index';
 import { ChatRoom } from '../../components/chatComponents/ChatRoom/index';
 import ChartContainer from '../../containers/ChartContainer';
+import './styles.css';
 
 
 function AuthenticatedApp() {

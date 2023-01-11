@@ -1,4 +1,5 @@
 import React, {useEffect, useState, useRef } from 'react';
+import './index.css';
 
 function Song({title, artist, position, image, audio}) {
 
