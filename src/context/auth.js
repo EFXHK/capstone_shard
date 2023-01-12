@@ -12,12 +12,7 @@ const AuthProvider = (props) => {
 
         if (!user) {
             // TODO: Handle failed login
-            // TODO: Handle failed login
-            // TODO: Handle failed login
-            // TODO: Handle failed login
-            // TODO: Handle failed login
-            // TODO: Handle failed login
-            // TODO: Handle failed login
+
         }
 
         setUser(user);

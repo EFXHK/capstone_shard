@@ -8,7 +8,7 @@ function Landing() {
         <div>
             
 
-                <h2>Choose a Chat Room</h2>
+                <h2>Choose a Shard</h2>
                 <ul className="chat-room-list">
                     {chatRooms.map((room) => (
                         <li key={room.id}>
